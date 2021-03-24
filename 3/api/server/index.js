@@ -1,20 +1,21 @@
 const express = require('express');
 const unirest = require('unirest');
+const logger = require('./components/logger');
 
 const api = express();
 api.use(express.json());
 
 api.get('/api?', (req, res) => {
-    // res.json(req.query);
+
+
     const request = unirest(
         "POST",
         "https://google-translate1.p.rapidapi.com/language/translate/v2"
     );
-
     request.headers({
         "content-type": "application/x-www-form-urlencoded",
         "accept-encoding": "application/gzip",
-        "x-rapidapi-key": "74ec3ceab8msh1d1c81794c6b082p1b2d36jsne6f9e3dc506f",
+        "x-rapidapi-key": "e4db6fe5f7msh32b4c2aec4e8e1ap1af503jsn2576fbae8ee0",
         "x-rapidapi-host": "google-translate1.p.rapidapi.com",
         "useQueryString": true
     });
@@ -32,7 +33,11 @@ api.get('/api?', (req, res) => {
             "Content-Type": "application/json",
             "Access-Control-Allow-Origin": "*",
         });
+
         res.send(response.body.data.translations);
+        let logMessage = req.query.lang1 + ' : ' + req.query.q + ' <> ' +
+            req.query.lang2 + ' : ' + response.body.data.translations[0].translatedText;
+        logger(logMessage);
     });
 
 });
