@@ -1,0 +1,1 @@
+export const URL_LOG = "./logs/log.txt";
