@@ -1,0 +1,14 @@
+
+March 24, 2021 12:36 PM === en : tree <> ru : bla
+March 24, 2021 12:37 PM === en : i'm fine <> ru : У меня все нормально
+March 24, 2021 12:38 PM === en : table <> ru : стол
+March 24, 2021 12:38 PM === ru : стол <> en : table
+March 24, 2021 12:41 PM === en : fine <> ru : отлично
+March 24, 2021 12:42 PM === en : good <> ru : хороший
+March 24, 2021 12:42 PM === en : хороший <> ru : хороший
+March 24, 2021 12:42 PM === ru : хороший <> en : good
+March 24, 2021 2:12 PM === en : tree <> ru : дерево
+March 24, 2021 2:13 PM === en : tree <> ru : дерево
+March 24, 2021 2:14 PM === en : web <> ru : сеть
+March 24, 2021 2:15 PM === ru : сеть <> en : network
+March 24, 2021 2:17 PM === ru : сеть <> en : network
